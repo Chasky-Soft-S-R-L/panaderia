@@ -9,13 +9,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --side:#14201C; --side-2:#1B2A25; --side-line:#26362F;
-    --side-txt:#98A79E; --side-active:#F4FBF7;
-    --accent:#1E9E77; --accent-h:#178360; --accent-soft:#E4F3EC; --accent-ink:#136045;
-    --bg:#F4F6F4; --card:#FFFFFF; --ink:#1C2621; --muted:#6C7772; --faint:#96A099;
-    --line:#E5E9E5; --line-2:#EEF1EE;
-    --green-s:#E3F3EA;--green-i:#1C7A4D; --blue-s:#E3ECF6;--blue-i:#2B5E8A;
-    --amber-s:#FAEFD5;--amber-i:#8A6113; --red-s:#F7E4E0;--red-i:#A5372A;
+    --side:#2A1B10; --side-2:#3A281A; --side-line:#4A3524;
+    --side-txt:#B39B82; --side-active:#FBF3E6;
+    --accent:#B9781A; --accent-h:#9C6210; --accent-soft:#F6E7C9; --accent-ink:#6B4206;
+    --bg:#F4ECDD; --card:#FFFDF8; --ink:#2C2015; --muted:#7C6A55; --faint:#A8967C;
+    --line:#E7DCC7; --line-2:#F1E9DA;
+    --green-s:#E7EFDA;--green-i:#3F6E28; --blue-s:#E2EAF3;--blue-i:#2E5C86;
+    --amber-s:#F6E0CE;--amber-i:#9A4A18; --red-s:#F6E1DB;--red-i:#A83C28;
     --font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
     --shadow:0 1px 2px rgba(20,32,28,.05),0 4px 16px rgba(20,32,28,.05);
     --radius:12px;
@@ -35,12 +35,12 @@
   .logo b{color:var(--side-active);font-size:15px;display:block;line-height:1.2}
   .logo small{font-size:11px;color:var(--side-txt)}
   nav{padding:8px 10px 20px}
-  .grp{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#5D6B63;padding:16px 10px 6px;font-weight:600}
+  .grp{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#9A8468;padding:16px 10px 6px;font-weight:600}
   .nav-i{display:flex;align-items:center;gap:11px;width:100%;background:none;border:none;color:var(--side-txt);padding:9px 11px;border-radius:9px;font-size:13.5px;text-align:left;border-left:2.5px solid transparent;margin-bottom:1px}
   .nav-i:hover{background:var(--side-2);color:var(--side-active)}
   .nav-i.on{background:var(--side-2);color:var(--side-active);border-left-color:var(--accent);font-weight:500}
   .nav-i .ic{width:17px;height:17px;flex-shrink:0;opacity:.9}
-  .nav-i .pill{margin-left:auto;font-size:9.5px;font-weight:700;letter-spacing:.03em;background:#2C3D35;color:#7FD3B0;padding:2px 6px;border-radius:6px}
+  .nav-i .pill{margin-left:auto;font-size:9.5px;font-weight:700;letter-spacing:.03em;background:#4A3420;color:#E4B76A;padding:2px 6px;border-radius:6px}
 
   /* ---------- Main ---------- */
   .wrap{flex:1;min-width:0;display:flex;flex-direction:column;height:100vh;overflow-y:auto}
@@ -89,10 +89,10 @@
   .card-h .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
   .card-h .r{margin-left:auto;display:flex;gap:8px;align-items:center}
   table{width:100%;border-collapse:collapse}
-  th{text-align:left;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);font-weight:600;padding:11px 18px;border-bottom:1px solid var(--line-2);background:#FBFCFB}
+  th{text-align:left;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);font-weight:600;padding:11px 18px;border-bottom:1px solid var(--line-2);background:#FCF8F0}
   td{padding:12px 18px;border-bottom:1px solid var(--line-2);font-size:13.5px;vertical-align:middle}
   tr:last-child td{border-bottom:none}
-  tbody tr:hover{background:#FAFBFA}
+  tbody tr:hover{background:#FBF6EC}
   td.r,th.r{text-align:right}
   .lnk{color:var(--accent-ink);font-weight:600;text-decoration:none}
   .sub2{color:var(--muted);font-size:12px}
@@ -100,7 +100,7 @@
   .pill{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px}
   .pill.g{background:var(--green-s);color:var(--green-i)} .pill.b{background:var(--blue-s);color:var(--blue-i)}
   .pill.a{background:var(--amber-s);color:var(--amber-i)} .pill.r{background:var(--red-s);color:var(--red-i)}
-  .pill.n{background:#EEF1EE;color:var(--muted)}
+  .pill.n{background:#EFE7D8;color:var(--muted)}
   .pill .d{width:6px;height:6px;border-radius:50%;background:currentColor}
   .typebadge{font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px}
   .typebadge.e{background:var(--accent-soft);color:var(--accent-ink)} .typebadge.rv{background:var(--blue-s);color:var(--blue-i)}
@@ -117,7 +117,7 @@
   /* POS */
   .pos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:11px}
   .pbtn{border:1px solid var(--line);background:#fff;border-radius:11px;padding:13px;text-align:left;display:flex;flex-direction:column;gap:4px;min-height:82px}
-  .pbtn:hover:not(:disabled){border-color:var(--accent);background:#FAFDFB}
+  .pbtn:hover:not(:disabled){border-color:var(--accent);background:#FFFBF2}
   .pbtn:disabled{opacity:.45;cursor:not-allowed}
   .pbtn .nm{font-weight:600;font-size:14px;line-height:1.25}
   .pbtn .pr{color:var(--accent-ink);font-weight:700}
@@ -135,7 +135,7 @@
   .diff{border-radius:10px;padding:13px 15px;margin-top:14px;font-size:14px}
   .diff.g{background:var(--green-s);color:var(--green-i)}.diff.b{background:var(--blue-s);color:var(--blue-i)}.diff.r{background:var(--red-s);color:var(--red-i)}
   .diff b{font-size:17px}
-  .note{font-size:12.5px;color:var(--muted);background:#FBFCFB;border:1px dashed var(--line);border-radius:10px;padding:11px 13px;margin-top:14px}
+  .note{font-size:12.5px;color:var(--muted);background:#FBF6EC;border:1px dashed var(--line);border-radius:10px;padding:11px 13px;margin-top:14px}
 
   /* Modal */
   .mroot{position:fixed;inset:0;z-index:40;display:none;align-items:flex-start;justify-content:center;background:rgba(20,32,28,.42);padding:60px 16px}
@@ -173,7 +173,7 @@
   .autoprint{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);margin-top:11px;cursor:pointer}
 
   /* ---------- Tiketera ---------- */
-  .tk-prev{display:flex;justify-content:center;background:#EEF1EE;padding:16px;border-radius:10px}
+  .tk-prev{display:flex;justify-content:center;background:#EFE7D9;padding:16px;border-radius:10px}
   .ticket{width:280px;background:#fff;color:#111;font-family:"Menlo","Consolas","Courier New",monospace;font-size:12px;line-height:1.45;padding:16px 16px 18px;box-shadow:0 2px 12px rgba(0,0,0,.12)}
   .ticket .tk-h{text-align:center}
   .ticket .tk-logo{font-size:18px;font-weight:700;letter-spacing:.06em;margin-bottom:2px}
